@@ -1,0 +1,8 @@
+services:
+  upload-attendance-file:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/upload-attendance-file
+    tty: true
