@@ -8,7 +8,9 @@
         "eamodio.gitlens",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "HashiCorp.terraform"
+        "HashiCorp.terraform",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
       ],
       "settings": {
         "prettier.configPath": ".prettierrc",
