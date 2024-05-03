@@ -39,7 +39,7 @@ resource "aws_iam_role_policy" "lambda_access_policy" {
       "Action": [
         "ssm:GetParameter"
       ],
-      "Resource": "arn:aws:ssm:*:*:parameter:*"
+      "Resource": "arn:aws:ssm:*:*:parameter/*"
     },
     {
       "Effect": "Allow",
@@ -47,7 +47,7 @@ resource "aws_iam_role_policy" "lambda_access_policy" {
         "s3:PutObject"
       ],
       "Resource": [
-        "arn:aws:s3-object-lambda:::*"
+        "arn:aws:s3:::*"
       ]
     }
   ]
