@@ -33,6 +33,22 @@ resource "aws_iam_role_policy" "lambda_access_policy" {
         "logs:PutLogEvents"
       ],
       "Resource": "arn:aws:logs:*:*:*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ssm:GetParameter"
+      ],
+      "Resource": "arn:aws:ssm:*:*:parameter:*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3-object-lambda:::*"
+      ]
     }
   ]
 }
