@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -p ."
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node20 --outdir=dist"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +27,8 @@
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "esbuild": "0.20.2"
   }
 }
